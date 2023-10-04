@@ -1,7 +1,6 @@
 package ua.hillel.lysenko.lessons.lesson8;
 
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class Lottery {
     public static void main(String[] args) {
