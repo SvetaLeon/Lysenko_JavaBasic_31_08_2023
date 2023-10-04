@@ -19,10 +19,28 @@ public class Lottery {
             numbersUser[i] = randomNumber;
         }
 
-        Arrays.sort(numbersLottery);
+        for (int i = 0; i < numbersLottery.length - 1; i++) {
+            for (int j = 0; j < numbersLottery.length - 1 - i; j++) {
+
+                if (numbersLottery[j] > numbersLottery[j + 1]) {
+                    int temp = numbersLottery[j];
+                    numbersLottery[j] = numbersLottery[j + 1];
+                    numbersLottery[j + 1] = temp;
+                }
+            }
+        }
         System.out.println(Arrays.toString(numbersLottery));
 
-        Arrays.sort(numbersUser);
+        for (int i = 0; i < numbersUser.length - 1; i++) {
+            for (int j = 0; j < numbersUser.length - 1 - i; j++) {
+
+                if (numbersUser[j] > numbersUser[j + 1]) {
+                    int temp = numbersUser[j];
+                    numbersUser[j] = numbersUser[j + 1];
+                    numbersUser[j + 1] = temp;
+                }
+            }
+        }
         System.out.println(Arrays.toString(numbersUser));
 
         int counter = 0;
@@ -39,7 +57,6 @@ public class Lottery {
         }
         System.out.println("Number of matches: " + counter);
     }
-
 }
 
 
