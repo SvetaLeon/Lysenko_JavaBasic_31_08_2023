@@ -56,24 +56,24 @@ public class AdditionalHomework {
         int index = 0;
         int left = 0;
         int right = array.length - 1;
-        int enteredNumber = 0;
+        int searchElement = 0;
 
         for (int value : array) {
             if (numberUser == value) {
-                enteredNumber = value;
+                searchElement = value;
             }
         }
 
-        if (enteredNumber == numberUser) {
+        if (searchElement == numberUser) {
 
             while (left <= right) {
 
                 int mid = (left + right) / 2;
 
-                if (array[mid] == enteredNumber) {
+                if (array[mid] == searchElement) {
                     index = mid;
                     break;
-                } else if (array[mid] < enteredNumber) {
+                } else if (array[mid] < searchElement) {
                     left = mid + 1;
                 } else {
                     right = mid - 1;
