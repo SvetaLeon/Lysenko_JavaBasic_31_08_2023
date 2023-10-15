@@ -2,17 +2,17 @@ package ua.hillel.shutko.lessons.lesson12;
 
 public class MainFitnessTracker {
     public static void main(String[] args) {
-        UserFitnessTracker userFitnessTracker1 = new UserFitnessTracker("Olga", "Sumska",
+        FitnessTracker userFitnessTracker1 = new FitnessTracker("Olga", "Sumska",
                 22, 8, 1966, "olga@gmail", "0670551221",
                 62, 70, 6000);
         userFitnessTracker1.printAccountInfo();
 
-        UserFitnessTracker userFitnessTracker2 = new UserFitnessTracker("Andriy", "Shevchenko",
+        FitnessTracker userFitnessTracker2 = new FitnessTracker("Andriy", "Shevchenko",
                 29, 9, 1976, "andriy@gmail", "0664455666",
                 88, 65, 10000);
         userFitnessTracker2.printAccountInfo();
 
-        UserFitnessTracker userFitnessTracker3 = new UserFitnessTracker("Tom", "Cruise",
+        FitnessTracker userFitnessTracker3 = new FitnessTracker("Tom", "Cruise",
                 3, 7, 1962, "tom@gmail", "0630813777",
                 94, 75, 9300);
         userFitnessTracker3.printAccountInfo();

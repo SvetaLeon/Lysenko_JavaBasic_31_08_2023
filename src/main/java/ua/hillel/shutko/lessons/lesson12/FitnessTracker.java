@@ -1,6 +1,6 @@
 package ua.hillel.shutko.lessons.lesson12;
 
-public class UserFitnessTracker {
+public class FitnessTracker {
 
     private final String firstName;
     String lastName;
@@ -13,8 +13,8 @@ public class UserFitnessTracker {
     int pressure;
     int numberOfStepsTaken;
 
-    public UserFitnessTracker(String firstName, String lastName, int dateOfBirth, int monthOfBirth, int yearOfBirth,
-                              String email, String phone, int weight, int pressure, int numberOfStepsTaken) {
+    public FitnessTracker(String firstName, String lastName, int dateOfBirth, int monthOfBirth, int yearOfBirth,
+                          String email, String phone, int weight, int pressure, int numberOfStepsTaken) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.dateOfBirth = dateOfBirth;
