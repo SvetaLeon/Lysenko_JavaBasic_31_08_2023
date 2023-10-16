@@ -12,6 +12,7 @@ public class FitnessTracker {
     int weight;
     int pressure;
     int numberOfStepsTaken;
+    private final int ageUser;
 
     public FitnessTracker(String firstName, String lastName, int dateOfBirth, int monthOfBirth, int yearOfBirth,
                           String email, String phone, int weight, int pressure, int numberOfStepsTaken) {
@@ -20,6 +21,7 @@ public class FitnessTracker {
         this.dateOfBirth = dateOfBirth;
         this.monthOfBirth = monthOfBirth;
         this.yearOfBirth = yearOfBirth;
+        ageUser = (2023 - this.yearOfBirth);
         this.email = email;
         this.phone = phone;
         this.weight = weight;
@@ -67,10 +69,7 @@ public class FitnessTracker {
         this.numberOfStepsTaken = numberOfStepsTaken;
     }
 
-    private int ageUser;
-
     public int getAgeUser() {
-        ageUser = 2023 - this.yearOfBirth;
         return ageUser;
     }
 

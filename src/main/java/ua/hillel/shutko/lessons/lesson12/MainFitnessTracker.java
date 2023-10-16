@@ -23,7 +23,7 @@ public class MainFitnessTracker {
         userFitnessTracker1.printAccountInfo();
 
         userFitnessTracker3.setPressure(80);
-        userFitnessTracker3.setNumberOfStepsTaken(9500);
+        userFitnessTracker3.setNumberOfStepsTaken(9560);
         userFitnessTracker3.printAccountInfo();
 
     }
