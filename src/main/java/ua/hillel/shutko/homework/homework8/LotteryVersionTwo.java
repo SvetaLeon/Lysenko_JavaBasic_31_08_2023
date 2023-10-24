@@ -1,4 +1,4 @@
-package ua.hillel.shutko.lessons.lesson8;
+package ua.hillel.shutko.homework.homework8;
 
 import java.util.Arrays;
 import java.util.Scanner;
