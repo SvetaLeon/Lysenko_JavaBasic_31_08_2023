@@ -116,12 +116,12 @@ public class CounterStrike {
             System.exit(0);
         }
 
-        int sumTeam1 = (player1Team1 + player2Team1 + player3Team1 + player4Team1 + player5Team1);
-        int arithmeticAverageTeam1 = (sumTeam1 / 5);
+        double sumTeam1 = (player1Team1 + player2Team1 + player3Team1 + player4Team1 + player5Team1);
+        double arithmeticAverageTeam1 = (sumTeam1 / 5);
         System.out.println("Arithmetic average of the " + teamName1 + " team = " + arithmeticAverageTeam1);
 
-        int sumTeam2 = (player1Team2 + player2Team2 + player3Team2 + player4Team2 + player5Team2);
-        int arithmeticAverageTeam2 = (sumTeam2 / 5);
+        double sumTeam2 = (player1Team2 + player2Team2 + player3Team2 + player4Team2 + player5Team2);
+       double arithmeticAverageTeam2 = (sumTeam2 / 5);
         System.out.println("Arithmetic average of the " + teamName2 + " team = " + arithmeticAverageTeam2);
 
         if (arithmeticAverageTeam1 > arithmeticAverageTeam2) {
