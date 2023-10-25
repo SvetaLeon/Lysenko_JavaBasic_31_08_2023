@@ -13,7 +13,7 @@ public class Drinks {
 
     public static int COUNTER_DRINKS = 0;
 
-    public static int totalCost = 0;
+    public static int TOTAL_COST = 0;
 
     public Drinks() {
         COUNTER_DRINKS++;
@@ -22,7 +22,7 @@ public class Drinks {
     public static void main(String[] args) {
         makingDrink();
         System.out.println("The number of manufactured drinks: " + COUNTER_DRINKS + ".");
-        System.out.println("The total amount to be paid is " + totalCost + " UAH.");
+        System.out.println("The total amount to be paid is " + TOTAL_COST + " UAH.");
     }
 
     static void makingDrink() {
@@ -99,10 +99,10 @@ public class Drinks {
                 }
             }
 
-            totalCost += costDrink;
+            TOTAL_COST += costDrink;
             drinksMachine = null;
 
-            if (totalCost > 0) {
+            if (TOTAL_COST > 0) {
                 new Drinks();
             } else {
                 System.out.println("You need to order something");
