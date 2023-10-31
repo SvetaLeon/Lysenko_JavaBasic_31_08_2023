@@ -2,34 +2,39 @@ package ua.hillel.shutko.homework.homework16;
 
 public class TwoDimensionalArray {
 
+    // if null - return -1
     // if empty - return -2
-    // if null - return -3
+    // if square array - return -3
+    // if not square array - return -4
 
-    public static int getCheckArray(int[][] array) {
+    public static int getCheckArray(int[][] array, int numberLines, int numberColumns) {
 
         if (array == null) {
-            return -3;
+            return -1;
         }
 
         if (array.length == 0) {
             return -2;
         }
 
-        if (array.length == array[0].length) {
-            return 1;
+        if (numberLines == numberColumns) {
+            return -3;
         }
 
-        return -1;
+        return -4;
     }
 
-    public static double getArithmeticMean(double[][] array) {
+    public static void getArithmeticMean(int[][] array) {
 
-        double sum = 0;
-        for (double[] ints : array) {
-            for (double value : ints) {
-                sum += value;
+        double sumValue = 0;
+        int sumElement = (array.length * array[0].length);
+
+        for (int[] ints : array) {
+            for (int value : ints) {
+                sumValue += (double) value;
             }
         }
-        return sum / array.length;
+
+        System.out.println("Arithmetic mean of array elements " + sumValue / sumElement);
     }
 }
