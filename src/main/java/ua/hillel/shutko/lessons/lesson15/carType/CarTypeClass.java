@@ -1,7 +1,7 @@
 package ua.hillel.shutko.lessons.lesson15.carType;
 
 public class CarTypeClass {
-
+//*** клас не може бути private, лише внутрішний клас може бути приватний
     private String type;
 
     public static final CarTypeClass CAR = new CarTypeClass("Автомобіль");
