@@ -28,4 +28,24 @@ public class MainHomeworkTwo {
         String str = String.valueOf(number);
         return !(str.contains("9") || str.contains("4"));
     }
-}
+
+        // version 2
+//        int counter = 0;
+//        for (int i = 1; counter < 100; i++) {
+//            boolean ok = true;
+//            int number = i;
+//            while (number > 0) {
+//                int result = number % 10;
+//                if (result == 4 || result == 9) {
+//                    ok = false;
+//                    break;
+//                }
+//                number = number / 10;
+//            }
+//            if (ok) {
+//                System.out.println("shuttle number: " + i);
+//                counter++;
+//            }
+//        }
+//        System.out.println("counter = " + counter);
+    }
